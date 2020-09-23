@@ -1,19 +1,13 @@
 {
-    "compilerOptions": {
-        "declaration": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "module": "commonjs",
-        "moduleResolution": "Node",
-        "outDir": "./lib",
-        "resolveJsonModule": true,
-        "strict": true,
-        "target": "ES6"
-    },
-    "include": [
-        "src"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ES2020",
+    "declaration": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./lib"
+  },
+  "include": ["./src"]
 }
