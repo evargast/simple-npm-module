@@ -1,4 +1,8 @@
 const path = require('path');
+const webpack = require("webpack");
+const { name, version } = require("./package.json");
+
+const banner = `${name}@v${version}`;
 
 module.exports = {
   mode: 'production',
@@ -23,6 +27,7 @@ module.exports = {
       },
     ],
   },
+  plugins: [new webpack.BannerPlugin(banner)],
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.jsx', '.svg', '.css', '.json'],
   },
