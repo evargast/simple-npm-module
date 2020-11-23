@@ -4,9 +4,9 @@
   "description": "This is an NPM module! ",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
-  "types": "./lib/@types/sdk.d.ts",
+  "types": "./lib/@types/index.d.ts",
   "files": [
-      "/lib"
+    "lib/"
   ],
   "scripts": {
     "build": "webpack --config webpack.config.js",
